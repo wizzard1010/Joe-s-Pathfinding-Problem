@@ -7,7 +7,7 @@ from search import env
 from search import answer_q7
 
 # During the development you can reduce this GRID_SIZE
-GRID_SIZE = 20
+GRID_SIZE = 40
 CELL_SIZE = 40
 WINDOW_SIZE = (CELL_SIZE * GRID_SIZE, CELL_SIZE * GRID_SIZE)
 
@@ -67,7 +67,7 @@ def verify_plan(grid, plan_states, plan_actions):
         expected_state = plan_states[i + 1] if i + 1 < len(plan_states) else None
 
         # Debugging log
-        #print(f"Action: {action}, Current: {current_state}, Next: {next_state}, Expected: {expected_state}")
+        print(f"Action: {action}, Current: {current_state}, Next: {next_state}, Expected: {expected_state}")
 
         if next_state != expected_state:
             print(f"Plan is invalid! Transition mismatch at {current_state} with action {action}")
