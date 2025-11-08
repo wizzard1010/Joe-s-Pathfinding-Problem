@@ -1,5 +1,5 @@
 # Joe-s-Pathfinding-Problem
-This is an AI project for Joe's Path finding problem using DPS, BFS, UCS and A* search strategies
+This is an AI project for Joe's Path finding problem using DFS, BFS, UCS and A* search strategies
 This project visualizes various pathfinding algorithms on a grid-based maze using Python and Pygame. The algorithms implemented include:
 
 Depth-First Search (DFS)
